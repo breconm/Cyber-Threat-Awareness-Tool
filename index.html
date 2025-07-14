@@ -22,43 +22,58 @@
                 <h2 class="text-2xl font-semibold mb-6 text-blue-900">Threat Library</h2>
                 <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
                     <!-- Phishing -->
-                    <div class="bg-white shadow hover:shadow-lg p-6 rounded-lg transition">
-                        <h3 class="text-lg font-bold text-red-600">Phishing</h3>
-                        <p class="text-sm mt-2 text-gray-600">Fake emails or messages tricking users into givng out personal information.</p>
+                    <div onclick="showModal('Phishing','Fake emails or messages tricking users into givng out personal information.')"
+                            class="bg-white shadow hover:shadow-lg p-6 rounded-lg transition">
+                        <h3 class="text-lg font-bold text-red-600 text-center" >Phishing</h3>
+                        <p class="text-sm mt-2 text-gray-600 text-center">Click here to view details.</p>
                     </div>
 
                     <!-- Ransomware -->
-                     <div class="bg-white shadow hover:shadow-lg p-6 rounded-lg transition">
-                        <h3 class="text-lg font-bold text-purple-600">Ransomware</h3>
-                        <p class="text-sm mt-2 text-gray-600">Malware that encrypts data and demands payment to restore access.</p>
+                     <div onclick="showModal('Ransomware','Malware that encrypts data and demands payment to restore access')"
+                            class="bg-white shadow hover:shadow-lg p-6 rounded-lg transition">
+                        <h3 class="text-lg font-bold text-purple-600 text-center">Ransomware</h3>
+                        <p class="text-sm mt-2 text-gray-600 text-center">Click here to view details.</p>
                      </div>
 
                      <!-- SQL Injection-->
-                      <div class="bg-white shadow hover:shadow-lg p-6 rounded-lg transition">
-                        <h3 class="text-lg font-bold text-green-600">SQL Injection</h3>
-                        <p class="text-sm mt-2 text-gray-600">Injecting SQL Code into forms to manipulate databases.</p>
+                      <div onclick="showModal('SQL Injection', 'Injecting SQL Code into forms to manipulate databases.')"
+                            class="bg-white shadow hover:shadow-lg p-6 rounded-lg transition">
+                        <h3 class="text-lg font-bold text-green-600 text-center">SQL Injection</h3>
+                        <p class="text-sm mt-2 text-gray-600 text-center">Click here to view details.</p>
                       </div>
 
                       <!-- Brute Force-->
-                      <div class="bg-white shadow hover:shadow-lg p-6 rounded-lg transition">
-                        <h3 class="text-lg font-bold text-yellow-600">Brute Force</h3>
-                        <p class="text-sm mt-2 text-gray-600">Systematically trying all possible combinations of passwords, keys, or credentials to gain unauthorized access to systems, networks, or data</p>
+                      <div onclick="showModal('Brute Force', 'Systematically trying all possible combinations of passwords, keys, or credentials to gain unauthorized access to systems, networks, or data')"
+                            class="bg-white shadow hover:shadow-lg p-6 rounded-lg transition">
+                        <h3 class="text-lg font-bold text-yellow-600 text-center">Brute Force</h3>
+                        <p class="text-sm mt-2 text-gray-600 text-center">Click here to view details.</p>
                       </div>
 
                       <!-- Zero Day-->
-                      <div class="bg-white shadow hover:shadow-lg p-6 rounded-lg transition">
-                        <h3 class="text-lg font-bold text-teal-600">Zero Day</h3>
-                        <p class="text-sm mt-2 text-gray-600">Exploits a previously unknown vulnerability in software or hardware before a patch or fix is developed.</p>
+                      <div onclick="showModal('Zero Day', 'Exploits a previously unknown vulnerability in software or hardware before a patch or fix is developed.')"
+                            class="bg-white shadow hover:shadow-lg p-6 rounded-lg transition">
+                        <h3 class="text-lg font-bold text-teal-600 text-center">Zero Day</h3>
+                        <p class="text-sm mt-2 text-gray-600 text-center">Click here to view details.</p>
                       </div>
 
                       <!-- DDoS-->
-                      <div class="bg-white shadow hover:shadow-lg p-6 rounded-lg transition">
-                        <h3 class="text-lg font-bold text-orange-600">DDoS</h3>
-                        <p class="text-sm mt-2 text-gray-600">Malicious attempt to disrupt online services by overwhelming them with a flood of internet traffic, making them unavailable to legitimate users.</p>
+                      <div onclick="showModal('DDoS', 'Malicious attempt to disrupt online services by overwhelming them with a flood of internet traffic, making them unavailable to legitimate users.')"
+                            class="bg-white shadow hover:shadow-lg p-6 rounded-lg transition">
+                        <h3 class="text-lg font-bold text-orange-600 text-center">DDoS</h3>
+                        <p class="text-sm mt-2 text-gray-600 text-center">Click here to view details.</p>
                       </div>
                 </div>
             </section>
         </main>
+
+        <!-- Modal -->
+        <div id="threat-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center z-50">
+            <div class="bg-white text-gray-900 p-6 rounded-lg w-11/12 max-w-md shadow-xl relative">
+                <button id="close-modal" class="absolue top-2 right-2 text-xl text-gray-400 hover:text-black">&times;</button>
+                <h3 id="modal-title" class="text-xl font-bold mb-2">Threat Title</h3>
+                <p id="modal-content" class="text-sm text-gray-700">Full threat details </p>
+            </div>
+        </div>
 
         <script src="script.js"></script>
     </body>
