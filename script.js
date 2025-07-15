@@ -1,8 +1,9 @@
 function showModal(title, content){
     document.getElementById('modal-title').textContent = title;
     document.getElementById('modal-content').textContent = content;
-    document.getElementById('threat-modal').classList.remove('hidden');
-    document.getElementById('threat-modal').classList.add('flex');
+    const modal = document.getElementById('threat-modal');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
 }
 
 document.getElementById('close-modal').addEventListener('click', () => {

@@ -20,7 +20,7 @@
                 <p>This tool will help you understand the common cyber threats through examples, quizzes and some best practices.</p>
             </section>
 
-            <!-- Threat Library-->
+            <!-- Threat Library Section-->
             <section class="mb-12"> 
                 <h2 class="text-2xl font-semibold mb-6 text-blue-900">THREAT LIBRARY</h2>
                 <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -91,7 +91,44 @@
             </div>
         </div>
 
+        <!--Threat Scenarios Section-->
+        <section id="threats" class="container mx-auto px-4 py-4">
+            <h3 class="text-2xl font-semibold text-teal-600 dark:text-blue-900 mb-6">THREAT SCENARIOS</h3>
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+                <div class="bg-white dark:bg-gray-400 p-6 rounded-lg shadow">
+                    <h4 class="text-lg font-bold mb-2">Phsihing Email</h4>
+                    <p class="mb-4">You receive an emai from your bank asking to confirm your login.</p>
+                    <button onclick="showModal('Phishing Email', 'This is a classic phishing attempt. Do not click links. Use the bank\'s direct website instead.')" class="bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600">Investigate</button>
+                </div>
+
+                <div class="bg-white dark:bg-gray-400 p-6 rounded-lg shadow">
+                    <h4 class="text-lg font-bold mb-2">Suspicious Login</h4>
+                    <p class="mb-4">A login attempt was made on your account from India at 3AM.</p>
+                    <button onclick="showModal('Suspicious Login', 'Enable 2FA immediately. Review account access and change your password if this wasn’t you.')" class="bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600">Investigate</button>
+                </div>
+
+                <div class="bg-white dark:bg-gray-400 p-6 rounded-lg shadow">
+                    <h4 class="text-lg font-bold mb-2">Malicious Attatchment</h4>
+                    <p class="mb-4">You downloaded a file attachment from a stranger.</p>
+                    <button onclick="showModal('Malicious Attatchment', 'EDelete the file. Scan your device with antivirus software. Never open unexpected attachments.')" class="bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600">Investigate</button>
+                </div>                
+
+            </div>
+        </section>
+
         <script src="script.js"></script>
+
+        <!-- Modal -->
+        <div id="threat-modal" class="fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center z-50">
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg max-w-md w-full text-center">
+            <h2 id="modal-title" class="text-xl font-bold text-teal-600 dark:text-teal-400 mb-4"></h2>
+            <p id="modal-content" class="mb-6 text-gray-700 dark:text-gray-200"></p>
+            <button id="close-modal" class="bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600">Close</button>
+            </div>
+         </div>
+  
+        
     </body>
 </html>
 
