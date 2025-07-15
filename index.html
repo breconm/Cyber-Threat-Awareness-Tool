@@ -14,12 +14,15 @@
         </header>
 
         <main class="p-8">
+            <!-- Welcome Section-->
             <section class="mb-8">
                 <h2 class="text-4xl font-semibold mb-4 text-center"> WELCOME</h2>
                 <p>This tool will help you understand the common cyber threats through examples, quizzes and some best practices.</p>
             </section>
+
+            <!-- Threat Library-->
             <section class="mb-12"> 
-                <h2 class="text-2xl font-semibold mb-6 text-blue-900">Threat Library</h2>
+                <h2 class="text-2xl font-semibold mb-6 text-blue-900">THREAT LIBRARY</h2>
                 <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
                     <!-- Phishing -->
                     <div onclick="showModal('Phishing','Fake emails or messages tricking users into givng out personal information.')"
@@ -62,6 +65,19 @@
                         <h3 class="text-lg font-bold text-orange-600 text-center">DDoS</h3>
                         <p class="text-sm mt-2 text-gray-600 text-center">Click here to view details.</p>
                       </div>
+                </div>
+            </section>
+
+            <!--Quiz Section-->
+            <section id="quiz" class="my-12">
+                <h2 class="text-2xl font-semibold text-blue-900 mb-4">CYBERSECURITY QUIZ</h2>
+                <div id="quiz-container" class="bg-white p-6 rounded shadow max-w-xl mx-auto">
+                    <p id="quiz-question" class="text-lg font-medium mb-4">Loading Question ...</p>
+                    <div id="quiz-options" class="space-y-2"></div>
+                    <p id="quiz-feedback" class="mt-4 text-sm font-semibold"></p>
+                    <button onclick="nextQuestion()" class="mt-6 bg-blue-700 hover:bg-blue-800 text-white px-4 py-2 rounded hidden" id="next-btn">
+                        Next Question ->
+                    </button>
                 </div>
             </section>
         </main>
