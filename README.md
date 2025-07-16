@@ -46,6 +46,18 @@ The **Cyber Threat Awareness Tool** is an interactive web application designed t
       ├── script.js          # Quiz, modal, and interactivity logic
       └── README.md
       
+## Roadmap / Future Enhancements
+
+- Add user authentication to save progress and scores
+
+- Introduce new threat types and categories
+
+- Expand with more interactive simulations
+
+- Backend integration to log and analyze user responses
+
+- Multi-language support
+
 ## License
 
 This project is licensed under the MIT License. You are free to use, modify, and distribute it with attribution.
