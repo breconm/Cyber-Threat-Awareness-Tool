@@ -37,7 +37,7 @@ The **Cyber Threat Awareness Tool** is an interactive web application designed t
 
       Simply open index.html using your preferred browser.
 
-# File Structure
+## File Structure
 
       cyber-threat-awareness-tool/
       │
@@ -47,11 +47,11 @@ The **Cyber Threat Awareness Tool** is an interactive web application designed t
       ├── assets/            # Optional folder for images/icons
       └── README.md
       
-# License
+## License
 
 This project is licensed under the MIT License. You are free to use, modify, and distribute it with attribution.
 
-# Author
+## Author
 
 Brecon M.
 Cybersecurity Student & Web Developer
