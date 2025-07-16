@@ -39,7 +39,6 @@ The **Cyber Threat Awareness Tool** is an interactive web application designed t
 
 # File Structure
 
-      ```bash
       cyber-threat-awareness-tool/
       │
       ├── index.html         # Main application layout
@@ -48,10 +47,12 @@ The **Cyber Threat Awareness Tool** is an interactive web application designed t
       ├── assets/            # Optional folder for images/icons
       └── README.md
       
-License
+# License
+
 This project is licensed under the MIT License. You are free to use, modify, and distribute it with attribution.
 
-Author
+# Author
+
 Brecon M.
 Cybersecurity Student & Web Developer
 GitHub: @breconm
