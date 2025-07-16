@@ -1,3 +1,16 @@
+const toggleBtn = document.getElementById("nav-toggle");
+  const menu = document.getElementById("mobile-menu");
+
+  toggleBtn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+
+  document.querySelectorAll('#mobile-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.add('hidden');
+    });
+  });
+
 function showModal(title, content){
     document.getElementById('modal-title').textContent = title;
     document.getElementById('modal-content').textContent = content;
