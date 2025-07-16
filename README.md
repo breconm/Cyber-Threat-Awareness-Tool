@@ -44,7 +44,6 @@ The **Cyber Threat Awareness Tool** is an interactive web application designed t
       ├── index.html         # Main application layout
       ├── style.css          # Custom styles
       ├── script.js          # Quiz, modal, and interactivity logic
-      ├── assets/            # Optional folder for images/icons
       └── README.md
       
 ## License
