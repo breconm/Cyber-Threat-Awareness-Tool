@@ -36,15 +36,6 @@ The **Cyber Threat Awareness Tool** is an interactive web application designed t
 3. Open the project in your browser:
 
       Simply open index.html using your preferred browser.
-
-## File Structure
-
-      cyber-threat-awareness-tool/
-      │
-      ├── index.html         # Main application layout
-      ├── style.css          # Custom styles
-      ├── script.js          # Quiz, modal, and interactivity logic
-      └── README.md
       
 ## Roadmap / Future Enhancements
 
